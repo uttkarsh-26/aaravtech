@@ -280,7 +280,7 @@ $config_directories = [];
  *   $settings['hash_salt'] = file_get_contents('/home/example/salt.txt');
  * @endcode
  */
-$settings['hash_salt'] = 'CCxlOeVUllmCklKYU4mvGhX-gyV8zJloD9s2qZgn9tKJcgcs023t3KGDKMGPT7oHrQ0rzLXJ_Q';
+$settings['hash_salt'] = '';
 
 /**
  * Deployment identifier.
@@ -496,8 +496,8 @@ if ($settings['hash_salt']) {
  *
  * Value should be in PHP Octal Notation, with leading zero.
  */
-$settings['file_chmod_directory'] = 0755;
-$settings['file_chmod_file'] = 0644;
+# $settings['file_chmod_directory'] = 0775;
+# $settings['file_chmod_file'] = 0664;
 
 /**
  * Public file base URL:
@@ -768,14 +768,4 @@ $settings['entity_update_batch_size'] = 50;
 # if (file_exists($app_root . '/' . $site_path . '/settings.local.php')) {
 #   include $app_root . '/' . $site_path . '/settings.local.php';
 # }
-$databases['default']['default'] = array (
-  'database' => 'u868210921_aarav',
-  'username' => 'u868210921_aarav',
-  'password' => 'Uttu@2606',
-  'prefix' => '',
-  'host' => 'localhost',
-  'port' => '3306',
-  'namespace' => 'Drupal\\Core\\Database\\Driver\\mysql',
-  'driver' => 'mysql',
-);
-$config_directories['sync'] = 'sites/default/files/config_g1XIZ15JzaN58tVWioZFv_482k4jpzETRIKbYrxUHS0WpiCXXdFZLZ-WrVsesh-eWTZ5V-GpXw/sync';
+$config_directories['sync'] = 'config/sync';
