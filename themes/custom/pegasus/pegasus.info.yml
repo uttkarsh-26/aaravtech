@@ -1,0 +1,28 @@
+name: Pegasus
+type: theme
+description: This is a gym sub theme
+core: 8.x
+# Defines the base theme
+base theme: drupal8_custom_theme
+# Defines libraries group in which we can add css/js.
+libraries:
+  - pegasus/global-styling
+
+#Regions
+regions:
+  header: 'Header'
+  primary_menu: 'Primary Menu'
+  highlighted: 'Highlighted'
+  page_title: 'Page Title'
+  breadcrumb: 'Breadcrumb'
+  search: 'Search'
+  content: 'Content'
+  sidebar_first: 'Left Sidebar'
+  sidebar_second: 'Right Sidebar'
+  bottom_first: 'Bottom First Widget'
+  bottom_second: 'Bottom Second Widget'
+  bottom_third: 'Bottom Third Widget'
+  bottom_forth: 'Bottom Forth Widget'
+  footer_menu: 'Footer Menu'
+  google_map: 'Google Map'
+  auto_hidden_block: 'Auto hidden blocks'

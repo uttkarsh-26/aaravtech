@@ -1,0 +1,20 @@
+@media (min-width: 767px) {
+    html body {
+        background: url(/themes/custom/pegasus/images/gym.jpg) fixed #333;
+    }
+    .bottom-widgets {
+        min-height: 450px;
+    }
+    .content .contact-form {
+        font-size: 25px;
+    }
+    video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -100;
+    }
+}
